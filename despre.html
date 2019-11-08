@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Cofetaria Cupcake</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
+		
+		<style >
+			.carousel-inner img {
+		width: 100vw;
+		height:80vh;
+		}
+		</style>
+		<script> //JS pt fadein Footer
+				$(window).scroll(function(){
+				var fromtop = $(document).scrollTop();       // pixels from top of screen
+				$('.footeru').css({opacity: (fromtop/8-200)/100}); // use a better formula for better fading
+		});
+		</script>
+		<script> //JS pt fadeout Jumbotron
+				$(window).scroll(function(){
+				var fromtop = $(document).scrollTop();       // pixels from top of screen
+				$('.fademe').css({opacity: (100-fromtop/6)/100}); // use a better formula for better fading
+		});
+		</script>
+	</head>
+	<header>
+		<div class="navbar-collapse" >
+			<nav class="navbar navbar-expand-lg navbar-dark fademe" style="background-color:#67e6dc !important" >
+				<div class="navbar-brand">
+					
+					<a class="navbar-brand " href="index.html" style="font-size: 50px; font-family: 'Dancing Script', cursive;"><img class="navbar-brand pb-3" src="img/cupcakeLogo.png" style="height:  10vh;">Cupcake</a>
+				</div>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse " id="navbarNav">
+					<ul class="navbar-nav" style="font-size: 25px; ">
+						<li class="nav-item pl-2 active">
+							<a class="nav-link active" href="despre.html">Despre Noi</a>
+						</li>
+						<li class="nav-item pl-2">
+							<a class="nav-link" href="produse.html">Produse</a>
+						</li>
+						
+						<li class="nav-item pl-2">
+							<a class="nav-link" href="contact.html">Contact</a>
+						</li>
+						
+					</ul>
+				</div>
+				
+			</nav>
+		</div>
+	</header>
+	<body id="grad">
+		
+		<br>
+		<h1 class="text-center mt-2" style="font-size: 50px; font-family: 'Dancing Script', cursive; color:rgba(75, 75, 75,1.0)!important;"> Cofetaria Cupcake </h1>
+		<br>
+		<div class="container">
+			<p class="text-center text-lg-center"  style="font-size: 25px; font-family: 'Dancing Script'; color:rgba(75, 75, 75,1.0)!important;">Atestat Informatica</p>
+			<p class="text-center text-lg-center"  style="font-size: 20px; font-family: 'Dancing Script', cursive; color:rgba(75, 75, 75,1.0)!important;">Petre George-Iulian</p>
+			<p class="text-center text-lg-center"  style="font-size: 25px; font-family: 'Dancing Script'; color:rgba(75, 75, 75,1.0)!important;">Colegiul National "Alexandru Odobescu"</p>
+		</div>
+		<!--SLIDER -->
+		
+		<div class="container">
+			<div class="row mt-5 p-3">
+				<div class="col-md-6 col-lg-6 col-sm-6">
+					<h3 class="display-4">Despre noi</h3>
+					<p class="text-dark text-justify">
+						Prin selecția fină și variată a produselor noastre, ne propunem să-ți îndulcim ziua, dar și să adăugăm gust celor mai speciale dintre evenimentele tale. Îndeletnicirile noastre prind formă atunci când printre ingrediente, adaugăm pasiune și suflet, iar produsele noastre primesc gustul echilibrat de care ai nevoie.
+						Avem experiență în a pune „cireașa pe tort” la evenimentele tale care merită experiențe dulci. Gama noastră completă de produse, de la prăjiturile mărunte, eclere, macarons, până la torturile variate pentru nunți, botezuri, zile onomastice și până la tărâmul de basm dulce al candy bar-urilor, oferă o incursiune personalizată și pe gustul tău în lumea dulce a Cofetăriei Cupcake.
+					</p>
+				</div>
+				<div class="col-md-6 col-lg-6 col-sm-6">
+					<img src="img/tort1.jpg" class="img-responsive float-right" style="height: 50vh;">
+				</div>
+			</div>
+			<div class="row mt-5 p-3">
+				
+				<div class="col-md-6 col-lg-6 col-sm-6">
+					<img src="img/tort2.jpg" class="img-responsive float-left" style="height: 50vh;">
+				</div>
+				
+				<div class="col-md-6 col-lg-6 col-sm-6">
+					<h3 class="display-4">Ce poate nu știai despre Cupcake</h3>
+					<p class="text-dark text-justify">
+						
+						Folosim materii prime de calitate. Nu adăugăm amelioratori, conservanți, premixuri. Sortimentele noastre cu cremă au la bază frișcă naturală, brânzeturi speciale, unt, și foarte des compoziții fierte pe bază de ouă. De aceea trebuie păstrate la frigider şi consumate în câteva zile, ca orice produs realizat acasă.
+						Nu congelăm, nu luăm de-a gata, facem totul de la zero, de la blaturi până la fondant. Ne folosim doar de mâini pentru modelare, asamblare, umplere și decor.
+						Producem zilnic atât cât credem că putem vinde ȋntr-o zi. Seara ne bucurăm dacă vitrinele sunt goale, iar a doua zi o luăm de la capăt.
+					</p>
+				</div>
+			</div>
+			<div class="row mt-5 p-3">
+				<div class="col-md-6 col-lg-6 col-sm-6">
+					<h3 class="display-4">Povestea noastra</h3>
+					<p class="text-dark text-justify">
+						Momentele si evenimentele fericite din viata fiecaruia le indulcim asa cum stim doar noi cu torturi, prajituri de casa si multe alte bunatati, sortimente produse intr-o gama larga in mai noul si modernul laborator propriu de cofetarie, pe care va invitam si asteptam cu drag sa le savurati prospetimea si delicatetea in magazinele noastre de prezentare.
+						
+						<span style="font-weight: bold;">SI NU UITATI!</span>
+						Important e ca am fost in trecut, existam in prezent si vom fi si in viitor <b> <i>“MEREU PE GUSTUL TAU” </i></b> continuandu-ne traditia si povestea.
+					</p>
+				</div>
+				<div class="col-md-6 col-lg-6 col-sm-6">
+					<img src="img/tort3.jpg" class="img-responsive float-right" style="height: 50vh;">
+				</div>
+			</div>
+		</div>
+	</body>
+	
+	<footer class="container">
+		<div class="row">
+			<div class="col-md-6 p-4">
+				<!-- Content -->
+				<h5 class="text" style="font-size: 30px; font-family: 'Dancing Script';">Cofetaria Cupcake</h5>
+				<p style="font-size: 20px; font-family: 'Dancing Script';">Atestat Informatica - Clasa a XII-a B</p>
+			</div>
+			<div class="col-md-3 p-4">
+				<h3 class="text" style="font-size: 50px; font-family: 'Dancing Script';">Navigare:</h3>
+			</div>
+			<div class="col-md-3 p-4">
+				
+				<ul class="list">
+					<li>
+						<a href="despre.html" class="nav-link text-dark " style="color: rgba(75, 75, 75,1.0)!important;">Despre Noi</a>
+					</li>
+					<li>
+						<a href="produse.html" class="nav-link text-dark" style="color: rgba(75, 75, 75,1.0)!important;">Produse</a>
+					</li>
+					<li>
+						<a href="locatii.html" class="nav-link text-dark" style="color: rgba(75, 75, 75,1.0)!important;">Locatii</a>
+					</li>
+					<li>
+						<a href="contact.html" class="nav-link text-dark" style="color: rgba(75, 75, 75,1.0)!important;">Contact</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		
+		
+	</footer>
+	<hr>
+	<div class="row p-3" 	>
+		<h5 class="text-center col-md-12 col-sm-12 col-lg-12 text-light" style="color: rgba(75, 75, 75,1.0)!important;">Copyright &copy; Petre George-Iulian</h5>
+		
+	</div>
+</html>

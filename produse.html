@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Cofetaria Cupcake</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
+		<script src="lightbox-plus-jquery.min.js"></script>
+		<link href="lightbox.min.css" rel="stylesheet">
+		
+		<style >
+			.carousel-inner img {
+		width: 100vw;
+		height:80vh;
+		}
+		</style>
+		<script> //JS pt fadein Footer
+				$(window).scroll(function(){
+				var fromtop = $(document).scrollTop();       // pixels from top of screen
+				$('.footeru').css({opacity: (fromtop/8-200)/100}); // use a better formula for better fading
+		});
+		</script>
+		<script> //JS pt fadeout Jumbotron
+				$(window).scroll(function(){
+				var fromtop = $(document).scrollTop();       // pixels from top of screen
+				$('.fademe').css({opacity: (100-fromtop/6)/100}); // use a better formula for better fading
+		});
+		</script>
+	</head>
+	<header>
+		<div class="navbar-collapse" >
+			<nav class="navbar navbar-expand-lg navbar-dark fademe" style="background-color:#67e6dc !important" >
+				<div class="navbar-brand">
+					
+					<a class="navbar-brand " href="index.html" style="font-size: 50px; font-family: 'Dancing Script', cursive;"><img class="navbar-brand pb-3" src="img/cupcakeLogo.png" style="height:  10vh;">Cupcake</a>
+				</div>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse " id="navbarNav">
+					<ul class="navbar-nav" style="font-size: 25px; ">
+						<li class="nav-item pl-2 ">
+							<a class="nav-link " href="despre.html">Despre Noi</a>
+						</li>
+						<li class="nav-item pl-2 active">
+							<a class="nav-link" href="produse.html">Produse</a>
+						</li>
+						
+						<li class="nav-item pl-2">
+							<a class="nav-link" href="contact.html">Contact</a>
+						</li>
+						
+					</ul>
+				</div>
+				
+			</nav>
+		</div>
+	</header>
+	<body id="grad">
+		
+		<br>
+		<h1 class="text-center mt-2" style="font-size: 50px; font-family: 'Dancing Script', cursive; color:rgba(75, 75, 75,1.0)!important;"> Cofetaria Cupcake </h1>
+		<br>
+		<div class="container">
+			<p class="text-center text-lg-center"  style="font-size: 25px; font-family: 'Dancing Script'; color:rgba(75, 75, 75,1.0)!important;">Atestat Informatica</p>
+			<p class="text-center text-lg-center"  style="font-size: 20px; font-family: 'Dancing Script', cursive; color:rgba(75, 75, 75,1.0)!important;">Petre George-Iulian</p>
+			<p class="text-center text-lg-center"  style="font-size: 25px; font-family: 'Dancing Script'; color:rgba(75, 75, 75,1.0)!important;">Colegiul National "Alexandru Odobescu"</p>
+		</div>
+		<!--SLIDER -->
+		
+		<div class="container">
+			<ul class="nav nav-pills nav-justified nav-fill">
+				<li class="nav-item ">
+					<a class="nav-link 	" data-toggle="tab" href="#torturi">Torturi</a>
+				</li>
+				<li class="nav-item  ">
+					<a class="nav-link " data-toggle="tab" href="#candybar">Candy Bar</a>
+				</li>
+				
+				<li class="nav-item ">
+					<a class="nav-link" data-toggle="tab" href="#prajituri">Prajituri</a>
+				</li>
+				
+			</ul>
+			<br> <hr> <br>
+			<div class="tab-content">
+				
+				<div id="torturi" class="tab-pane fade">
+					<h3 style="font-family: 'Dancing Script';" class="text-center">Invitatul mult așteptat al nunții tale,
+					TORTUL</h3>
+					<hr>
+					<p class="text-center"> Vei rămâne în centrul atenției, dar tortul va atrage mesenii în jurul lui. Invitatul mult așteptat de toți face ca seara ta specială să prindă și mai mult șarm, prin ornamentele și gustul care le va spune tuturor povestea evenimentului. </p>
+					<p class="text-center">Torturile noastre spun povestea fiecărei nunți, aniversări speciale și zile onomastice. Ingredientele naturale pe care le folosim dau echilibru gustului.</p>
+					<div class="row mt-5 p-3">
+						<div class="col-md-6 col-lg-6 col-sm-6">
+							<h3 class="display-4 text-right">Torturi de ciocolata</h3> <br>
+							<h5 style="font-family: 'Dancing Script';" class="text-dark text-right">Tort Oreo</h5>
+							<p class="text-dark text-right">
+								
+								foi de ciocolată –
+								cremă mascarpone –
+								biscuit oreo –
+							</p>
+							<h5 style="font-family: 'Dancing Script';" class="text-dark text-right">Tort Royal</h5>
+							<p class="text-dark text-right">
+								foi albuș cu migdale –
+								cremă de vanilie –
+								vișine –
+							</p>
+							<h5 style="font-family: 'Dancing Script';" class="text-dark text-right">Tort Ciocolată</h5>
+							<p class="text-dark text-right">
+								blat de ciocolată –
+								cremă de ciocolată –
+								opțional se poate pune vișine sau nucă –
+							</p>
+						</div>
+						<div class="col-md-6 col-lg-6 col-sm-6">
+							<img src="img/tortul1.jpg" class="img-responsive float-right" style="height: 50vh;">
+						</div>
+					</div>
+					<div class="row mt-5 p-3">
+						<div class="col-md-6 col-lg-6 col-sm-6">
+							<img src="img/tortul3.jpg" class="img-responsive float-left" style="height: 50vh;">
+						</div>
+						<div class="col-md-6 col-lg-6 col-sm-6">
+							<h3 class="display-4 text-left">Torturi fresh</h3> <br>
+							<h5 style="font-family: 'Dancing Script';" class="text-dark text-left">Tort Fedora</h5>
+							<p class="text-dark text-left">
+								
+								- blat de ciocolată –
+								cremă de mascarpone –
+								fructe de pădure
+							</p>
+							<h5 style="font-family: 'Dancing Script';" class="text-dark text-left">Tort Fructe/Diplomat</h5>
+							<p class="text-dark text-left">
+								– blat de vanilie –
+								cremă de vanilie –
+								fructe de pădure sau cocktail
+							</p>
+							<h5 style="font-family: 'Dancing Script';" class="text-dark text-left">Tort Imperial</h5>
+							<p class="text-dark text-left">
+								– blat de cocos –
+								cremă de ciocolată + vișine –
+								cremă de vanilie –
+								glazură de caramel
+							</p>
+						</div>
+						
+					</div>
+					<div class="row mt-5 p-3">
+						<div class="col-md-6 col-lg-6 col-sm-6">
+							<h3 class="display-4 text-right">Torturi îndrăznețe</h3> <br>
+							<h5 style="font-family: 'Dancing Script';" class="text-dark text-right">Tort Giotto
+							</h5>
+							<p class="text-dark text-right">
+								
+								– blat de cacao –
+								cremă de ciocolată + cremă de mascarpone –
+								cremă cu crunch giotto
+							</p>
+							<h5 style="font-family: 'Dancing Script';" class="text-dark text-right">Tort Profiterol
+							</h5>
+							<p class="text-dark text-right">
+								– blat de vanilie –
+								cremă de ciocolată –
+							minichoux cu cremă de vanilie </p>
+							<h5 style="font-family: 'Dancing Script';" class="text-dark text-right">Mousse de fructe de pădure</h5>
+							<p class="text-dark text-right">
+								– blat de vanilie –
+								cremă mousse de fructe de pădure, cremă de ciocolată albă și coji de lămâie
+							</p>
+						</div>
+						<div class="col-md-6 col-lg-6 col-sm-6">
+							<img src="img/tortul2.jpg" class="img-responsive float-right" style="height: 50vh;">
+						</div>
+					</div>
+				</div>
+				<div id="candybar" class="tab-pane fade active">
+					<h3 style="font-family: 'Dancing Script';" class="text-center">Momentele dulci și aromate ale Candy Bar-ului</h3>
+					<hr>
+					<p class="text-center"> Gama noastră variată de prăjituri – mousse, tarte, miniuri, lollipops, biluțe și muffins – oferă momente dulci și aromate invitaților. Gustul prăjiturilor e unic și de necontestat, iar decorul fiecărui candy bar primește o puternică personalitate prin detaliile de design care întregesc povestea evenimentului tău.</p>
+					<p class="text-center">Cu Cofetaria Cupcake,  nunțile, aniversările, zilele onomastice și ocaziile ce merită sărbătorite devin povești memorabile.
+					Invitaților trebuie să le faceți o incursiune dulce în povestea voastră. Lăsați-i să pășească, să se piardă în admirație și curiozitatea gustului, ca mai apoi să descopere caracterul evenimentului tău.</p>
+					<div class="row p-3" >
+						<div class="col-lg-4 col-md-6 col-sm-12 gallery">
+							<a href="img/candy1.jpg"  data-lightbox="imagine" ><img src="img/candy1.jpg" class="img-fluid"></a>
+						</div>
+						<div class="col-lg-4 col-md-6 col-sm-12 gallery">
+							<a href="img/candy2.jpg"  data-lightbox="imagine" ><img src="img/candy2.jpg" class="img-fluid"></a>
+						</div>
+						<div class="col-lg-4 col-md-6 col-sm-12 gallery">
+							<a href="img/candy3.jpg"  data-lightbox="imagine" ><img src="img/candy3.jpg" class="img-fluid"></a>
+						</div>
+					</div>
+					<div class="row p-3" >
+						<div class="col-lg-4 col-md-6 col-sm-12 gallery">
+							<a href="img/candy4.jpg"  data-lightbox="imagine" ><img src="img/candy4.jpg" class="img-fluid"></a>
+						</div>
+						<div class="col-lg-4 col-md-6 col-sm-12 gallery">
+							<a href="img/candy5.jpg"  data-lightbox="imagine" ><img src="img/candy5.jpg" class="img-fluid"></a>
+						</div>
+						<div class="col-lg-4 col-md-6 col-sm-12 gallery">
+							<a href="img/candy6.jpg"  data-lightbox="imagine" ><img src="img/candy6.jpg" class="img-fluid"></a>
+						</div>
+					</div>
+				</div>
+				<div id="prajituri" class="tab-pane fade">
+					<h3 style="font-family: 'Dancing Script';" class="text-center">Prajituri</h3>
+					<p class="text-center">Produsele noastre de cofetărie sunt create pastrând vechiile tradiţii. Cofetăria Jasmin dispune de reţete ce includ produse naturale realizate pe baza de crema fiarta, fara a folosi "prafuri".
+					Laboratorul ultra dotat dispune de utilajele cele mai performante, fiind construit respectând standardele europene.</p>
+					<div class="row p-3" >
+						<div class="col-lg-4 col-md-6 col-sm-12 gallery">
+							<a href="img/praji1.jpg"  data-lightbox="imagine" ><img src="img/praji1.jpg" class="img-fluid"></a>
+						</div>
+						<div class="col-lg-4 col-md-6 col-sm-12 gallery">
+							<a href="img/praji2.jpg"  data-lightbox="imagine" ><img src="img/praji2.jpg" class="img-fluid"></a>
+						</div>
+						<div class="col-lg-4 col-md-6 col-sm-12 gallery">
+							<a href="img/praji3.jpg"  data-lightbox="imagine" ><img src="img/praji3.jpg" class="img-fluid"></a>
+						</div>
+					</div>
+					<div class="row p-3" >
+						<div class="col-lg-4 col-md-6 col-sm-12 gallery">
+							<a href="img/praji4.jpg"  data-lightbox="imagine" ><img src="img/praji4.jpg" class="img-fluid"></a>
+						</div>
+						<div class="col-lg-4 col-md-6 col-sm-12 gallery">
+							<a href="img/praji5.jpg"  data-lightbox="imagine" ><img src="img/praji5.jpg" class="img-fluid"></a>
+						</div>
+						<div class="col-lg-4 col-md-6 col-sm-12 gallery">
+							<a href="img/praji6.jpg"  data-lightbox="imagine" ><img src="img/praji6.jpg" class="img-fluid"></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+	<hr>
+	<footer class="container">
+		<div class="row">
+			<div class="col-md-6 p-4">
+				<!-- Content -->
+				<h5 class="text" style="font-size: 30px; font-family: 'Dancing Script';">Cofetaria Cupcake</h5>
+				<p style="font-size: 20px; font-family: 'Dancing Script';">Atestat Informatica - Clasa a XII-a B</p>
+			</div>
+			<div class="col-md-3 p-4">
+				<h3 class="text" style="font-size: 50px; font-family: 'Dancing Script';">Navigare:</h3>
+			</div>
+			<div class="col-md-3 p-4">
+				
+				<ul class="list">
+					<li>
+						<a href="despre.html" class="nav-link text-dark " style="color: rgba(75, 75, 75,1.0)!important;">Despre Noi</a>
+					</li>
+					<li>
+						<a href="produse.html" class="nav-link text-dark" style="color: rgba(75, 75, 75,1.0)!important;">Produse</a>
+					</li>
+					<li>
+						<a href="locatii.html" class="nav-link text-dark" style="color: rgba(75, 75, 75,1.0)!important;">Locatii</a>
+					</li>
+					<li>
+						<a href="contact.html" class="nav-link text-dark" style="color: rgba(75, 75, 75,1.0)!important;">Contact</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		
+		
+	</footer>
+	<hr>
+	<div class="row p-3" 	>
+		<h5 class="text-center col-md-12 col-sm-12 col-lg-12 text-light" style="color: rgba(75, 75, 75,1.0)!important;">Copyright &copy; Petre George-Iulian</h5>
+		
+	</div>
+</html>

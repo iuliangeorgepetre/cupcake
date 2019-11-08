@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Cofetaria Cupcake</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
+		
+		<style >
+			.carousel-inner img {
+		width: 100vw;
+		height:80vh;
+		}
+		</style>
+		<script> //JS pt fadein Footer
+				$(window).scroll(function(){
+				var fromtop = $(document).scrollTop();       // pixels from top of screen
+				$('.footeru').css({opacity: (fromtop/8-200)/100}); // use a better formula for better fading
+		});
+		</script>
+		<script> //JS pt fadeout Jumbotron
+				$(window).scroll(function(){
+				var fromtop = $(document).scrollTop();       // pixels from top of screen
+				$('.fademe').css({opacity: (100-fromtop/6)/100}); // use a better formula for better fading
+		});
+		</script>
+	</head>
+	<header>
+		<div class="navbar-collapse" >
+			<nav class="navbar navbar-expand-lg navbar-dark fademe" style="background-color:#67e6dc !important" >
+				<div class="navbar-brand">
+					
+					<a class="navbar-brand " href="index.html" style="font-size: 50px; font-family: 'Dancing Script', cursive;"><img class="navbar-brand pb-3" src="img/cupcakeLogo.png" style="height:  10vh;">Cupcake</a>
+				</div>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse " id="navbarNav">
+					<ul class="navbar-nav" style="font-size: 25px; ">
+						<li class="nav-item pl-2 ">
+							<a class="nav-link" href="despre.html">Despre Noi</a>
+						</li>
+						<li class="nav-item pl-2">
+							<a class="nav-link" href="produse.html">Produse</a>
+						</li>
+						<li class="nav-item pl-2 active">
+							<a class="nav-link" href="locatii.html">Locatii</a>
+						</li>
+						<li class="nav-item pl-2">
+							<a class="nav-link" href="contact.html">Contact</a>
+						</li>
+						
+					</ul>
+				</div>
+				
+			</nav>
+		</div>
+	</header>
+	<body id="grad">
+		
+		<br>
+		<h1 class="text-center mt-2" style="font-size: 50px; font-family: 'Dancing Script', cursive; color:rgba(75, 75, 75,1.0)!important;"> Cofetaria Cupcake </h1>
+		<br>
+		<div class="container">
+			<p class="text-center text-lg-center"  style="font-size: 25px; font-family: 'Dancing Script'; color:rgba(75, 75, 75,1.0)!important;">Atestat Informatica</p>
+			<p class="text-center text-lg-center"  style="font-size: 20px; font-family: 'Dancing Script', cursive; color:rgba(75, 75, 75,1.0)!important;">Petre George-Iulian</p>
+			<p class="text-center text-lg-center"  style="font-size: 25px; font-family: 'Dancing Script'; color:rgba(75, 75, 75,1.0)!important;">Colegiul National "Alexandru Odobescu"</p>
+		</div>
+		<!--SLIDER -->
+		<div id="demo" class="carousel slide " data-ride="carousel">
+			<!-- Indicators -->
+			<ul class="carousel-indicators">
+				<li data-target="#demo" data-slide-to="0" class="active"></li>
+				<li data-target="#demo" data-slide-to="1"></li>
+				<li data-target="#demo" data-slide-to="2"></li>
+			</ul>
+			
+			<!-- The slideshow -->
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					<img src="img/11.jpg" alt="Los Angeles" >
+					<div class="carousel-caption d-none d-md-block" style="margin-bottom: 10vh;background-color:rgba(0, 0, 0, 0.4); width:100vw; left: 0px;">
+						<h1 style="font-size: 60px; font-family: 'Dancing Script';">Momentele dulci</h1>
+						<p> sunt întotdeauna cele mai frumoase surprize.
+							Te așteptăm la Cofetăria Cupcake să pătrunzi în labirintul aromelor delicate. Lasă-te purtat pe traseele experiențelor dulci, cunoaște lumea variată a prăjiturilor și a torturilor. Aventurează-te pe scena candy-barurilor, unde lumina reflectoarelor de arome dulci îți vor răsfăța visurile.
+						La capătul labirintului, vei da gust evenimentelor tale speciale.</p>
+					</div>
+				</div>
+				<div class="carousel-item">
+					<img src="img/22.jpg" alt="Chicago" >
+					<div class="carousel-caption d-none d-md-block" style="margin-bottom: 10vh;background-color:rgba(0, 0, 0, 0.4); width:100vw; left: 0px;">
+						<h1 style="font-size: 60px; font-family: 'Dancing Script';">Pasiune</h3>
+						<p>De peste 20 de ani facem produse delicioase de cofetărie și patiserie, după rețete tradiționale și din materii prime naturale. Tot ce vindem e foarte proaspăt, pentru că fiecare cofetărie are în spate propriul laborator unde se face zilnic de la zero tot ce vă încântă ochii pe rafturi și în vitrine.</p>
+					</div>
+				</div>
+				<div class="carousel-item">
+					<img src="img/33.jpg" alt="New York" >
+					<div class="carousel-caption d-none d-md-block" style="margin-bottom: 10vh;background-color:rgba(0, 0, 0, 0.4); width:100vw; left: 0px; right: 0px;">
+						<h1 style="font-size: 60px; font-family: 'Dancing Script';">Calitate</h3>
+						<p>Folosim materii prime de calitate. Nu adăugăm amelioratori, conservanți, premixuri. Sortimentele noastre cu cremă au la bază frișcă naturală, brânzeturi speciale, unt, și foarte des compoziții fierte pe bază de ouă. De aceea trebuie păstrate la frigider şi consumate în câteva zile, ca orice produs realizat acasă.</p>
+					</div>
+				</div>
+			</div>
+			
+			<!-- Left and right controls -->
+			<a class="carousel-control-prev" href="#demo" data-slide="prev">
+				<span class="carousel-control-prev-icon"></span>
+			</a>
+			<a class="carousel-control-next" href="#demo" data-slide="next">
+				<span class="carousel-control-next-icon"></span>
+			</a>
+		</div>
+		
+		<div class="row mt-5 p-3">
+			<div class="col-md-12 col-lg-12 col-sm-12">
+				<p class="text-dark">
+					
+				</p>
+			</div>
+		</div>
+	</body>
+	<footer class="container">
+		<div class="row">
+			<div class="col-md-6 p-4">
+				<!-- Content -->
+				<h5 class="text" style="font-size: 30px; font-family: 'Dancing Script';">Cofetaria Cupcake</h5>
+				<p style="font-size: 20px; font-family: 'Dancing Script';">Atestat Informatica - Clasa a XII-a B</p>
+			</div>
+			<div class="col-md-3 p-4">
+				<h3 class="text" style="font-size: 50px; font-family: 'Dancing Script';">Navigare:</h3>
+			</div>
+			<div class="col-md-3 p-4">
+				
+				<ul class="list">
+					<li>
+						<a href="despre.html" class="nav-link text-dark " style="color: rgba(75, 75, 75,1.0)!important;">Despre Noi</a>
+					</li>
+					<li>
+						<a href="produse.html" class="nav-link text-dark" style="color: rgba(75, 75, 75,1.0)!important;">Produse</a>
+					</li>
+					<li>
+						<a href="locatii.html" class="nav-link text-dark" style="color: rgba(75, 75, 75,1.0)!important;">Locatii</a>
+					</li>
+					<li>
+						<a href="contact.html" class="nav-link text-dark" style="color: rgba(75, 75, 75,1.0)!important;">Contact</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		
+		
+	</footer>
+	
+	<div class="row p-3" style="background-color:rgba(103, 230, 220, 0.6) !important;">
+		<h5 class="text-center col-md-12 col-sm-12 col-lg-12 text-light" style="color: rgba(75, 75, 75,1.0)!important;">Copyright &copy; Petre George-Iulian</h5>
+		
+	</div>
+</html>
